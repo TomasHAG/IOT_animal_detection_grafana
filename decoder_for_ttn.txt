@@ -1,0 +1,12 @@
+function Decoder(bytes, port) {
+  var decoded = {};
+
+  if (port === 2){
+    decoded.sensor_trigger = 1;
+  }
+  if (port === 3){
+    decoded.sensor_trigger = 0;
+  }
+
+  return decoded;
+}
